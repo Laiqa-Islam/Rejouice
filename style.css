@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: nb;
+    src: url(/NB-International-Pro-Regular.ttf);
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(/Rejouice-Headline.woff2);
+}
+
+body {
+    background-color: #dad8d4;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#page1-content {
+    position: relative;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0vw;
+    font-family: nb;
+
+}
+
+nav h3 {
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+
+nav h4 {
+    font-weight: 100;
+}
+
+#page1-content>h1 span {
+    font-family: rejoy;
+    font-size: 25vw;
+    line-height: 17vw;
+    display: inline-block;
+}
+
+#cursor {
+    z-index: 3;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.701);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* transform: translate(50%,50%) */
+}
+
+#cursor h3 {
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+
+#page2 {
+    padding: 4vw 2.5vw;
+    font-family: nb;
+    min-height: 70vh;
+    max-width: 100vw;
+}
+
+#page2-heading {
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page2-heading h1 {
+    font-weight: 50;
+    font-size: 1.5vw;
+}
+
+#page2-description {
+    font-family: nb;
+    font-size: 4vw;
+    font-weight: 50;
+    text-decoration: underline;
+}
+
+#page3 {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+#page3-top {
+    font-family: nb;
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+}
+
+#page3-top h4 {
+    padding: 3vw;
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+
+#page3-top h4 span {
+    font-size: 1vw;
+    background-color: black;
+    padding: 0.3vw 0.8vw;
+    border-radius: 20px;
+    color: white;
+}
+
+#page3-top h2 {
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+#page3-elements {
+    padding: 3vw;
+    margin-top: 8vw;
+    height: 80vh;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+}
+
+#page3-elements .box {
+    width: 32vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#page3-elements img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box:hover img {
+    opacity: 0;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    /* position: relative; */
+
+}
+
+#page5 h1 {
+    font-family: rejoy;
+    font-weight: 100;
+    font-size: 8vw;
+    width: 96%;
+    left: 2%;
+    position: relative;
+    padding: 2vw 0vw;
+    border-bottom: 1px solid black;
+}
+
+#swiperdiv {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    margin: -3% 0;
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    gap: 2vw;
+
+}
+
+.swiper-slide img {
+    display: inline-block;
+    width: 19%;
+    object-fit: cover;
+}
+
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 99;
+}
+
+#loader h3{
+    font-family: nb;
+    font-size: 2vw;
+}
